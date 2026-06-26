@@ -1,0 +1,10 @@
+# Internet Fácil Br
+> Ferramentas gratuitas e dicas para resolver problemas de
+> internet, Wi-Fi e tecnologia no Brasil.
+
+## Páginas principais
+- Início: https://internetfacilbr.pages.dev/
+- Sobre: https://internetfacilbr.pages.dev/sobre.html
+- Contato: https://internetfacilbr.pages.dev/contato.html
+- Privacidade: https://internetfacilbr.pages.dev/privacidade.html
+- Termos: https://internetfacilbr.pages.dev/termos.html

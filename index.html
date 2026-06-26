@@ -36,6 +36,16 @@
   <meta name="twitter:image" content="https://internetfacilbr.pages.dev/assets/og-image.jpg">
   <meta name="twitter:image:alt" content="Internet Fácil Br - Soluções para Internet e Tecnologia">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- Preconnects -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZLJ7D086S"></script>
   <script>
@@ -124,6 +134,9 @@
     html{scroll-behavior:smooth}
     body{font-family:Inter,sans-serif;background:linear-gradient(180deg,var(--bg),var(--bg2));color:var(--text);line-height:1.6;min-height:100vh}
     body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 20% 10%,rgba(0,229,255,.12),transparent 28%),radial-gradient(circle at 85% 70%,rgba(0,120,255,.11),transparent 32%);z-index:-1;pointer-events:none}
+    .skip-link{position:absolute;top:-40px;left:0;background:var(--accent);color:var(--bg);padding:8px 16px;z-index:100;font-weight:700;border-radius:0 0 8px 0;transition:top .2s}.skip-link:focus{top:0}
+    .byline{color:#5a7a9a;font-size:12px;margin-top:6px}
+    .intro-text{max-width:900px;margin:0 auto 30px;padding:0 22px;color:var(--muted);font-size:16px;line-height:1.75;text-align:center}
     .wrap{max-width:1180px;margin:auto;padding:0 22px}
     .top{position:fixed;top:0;left:0;right:0;z-index:9;background:rgba(10,22,40,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
     .top .wrap{height:72px;display:flex;justify-content:space-between;align-items:center}
@@ -143,20 +156,26 @@
   </style>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+
   <header class="top">
     <div class="wrap">
-      <a class="logo" href="#inicio"><i class="fas fa-wifi"></i>Internet Fácil Br</a>
+      <a class="logo" href="#inicio" aria-label="Internet Fácil Br - Página inicial"><i class="fas fa-wifi" aria-hidden="true"></i>Internet Fácil Br</a>
       <nav class="nav"><a class="active" href="#inicio">Início</a><a href="#tools">Ferramentas</a><a href="#blog">Blog</a><a href="#products">Produtos</a></nav>
       <button class="hamb" id="hamb" aria-label="Menu"><i class="fas fa-bars"></i></button>
     </div>
     <nav class="mobile" id="mob"><a href="#inicio">Início</a><a href="#tools">Ferramentas</a><a href="#blog">Blog</a><a href="#products">Produtos</a></nav>
   </header>
 
-  <main id="inicio">
-    <section class="hero">
+  <main id="main-content">
+    <section class="hero" id="inicio">
       <h1>Resolva problemas de internet, Wi‑Fi e tecnologia sem precisar ser especialista.</h1>
-      <p>Guias simples, ferramentas gratuitas e dicas práticas para você resolver seus problemas de internet hoje mesmo.</p>
+      <p>Guias simples, ferramentas gratuitas e dicas práticas para você resolver seus problemas de conexão hoje mesmo.</p>
     </section>
+
+    <div class="intro-text">
+      <p>Milhões de brasileiros enfrentam dificuldades com a conexão de internet todos os dias — sinal fraco do roteador, velocidade abaixo do contratado, quedas frequentes ou dúvidas sobre qual plano de banda larga escolher. O <strong>Internet Fácil Br</strong> reúne ferramentas online gratuitas e tutoriais descomplicados para que qualquer pessoa consiga diagnosticar falhas, otimizar o desempenho da rede doméstica e navegar com mais segurança. Seja para configurar seu roteador Wi-Fi, descobrir quantos megabits por segundo a sua casa realmente precisa ou aprender a identificar tentativas de golpe digital, aqui você encontra respostas claras e objetivas — sem jargão técnico e sem custo.</p>
+    </div>
 
     <section class="section wrap" id="tools">
       <h2 class="title">Ferramentas Gratuitas</h2>
@@ -197,7 +216,7 @@
     <section class="section wrap" id="products"><h2 class="title">Produtos Úteis</h2><div class="grid"><div class="prod"><a href="#products"><i class="fas fa-wifi"></i><h3>Roteadores</h3><p>Modelos recomendados para melhor sinal</p></a></div><div class="prod"><a href="#products"><i class="fas fa-repeat"></i><h3>Repetidores Wi‑Fi</h3><p>Aumente a cobertura em sua casa</p></a></div><div class="prod"><a href="#products"><i class="fas fa-network-wired"></i><h3>Cabos de Rede</h3><p>Conexões estáveis e confiáveis</p></a></div><div class="prod"><a href="#products"><i class="fas fa-bolt"></i><h3>Filtros de Linha</h3><p>Proteção contra picos de energia</p></a></div></div><div class="avis"><i class="fas fa-info-circle"></i> Aviso: esta seção poderá conter links de afiliados. Se você comprar através desses links, podemos receber uma comissão sem custo adicional para você.</div></section>
   </main>
 
-  <footer class="foot"><div class="wrap fgrid"><div><h3>Sobre</h3><ul><li><a href="https://internetfacilbr.blogspot.com/p/sobre.html">Sobre Nós</a></li></ul></div><div><h3>Contato</h3><ul><li><a href="https://internetfacilbr.blogspot.com/p/contato.html">Fale Conosco</a></li></ul></div><div><h3>Legal</h3><ul><li><a href="https://internetfacilbr.blogspot.com/p/politica-de-privacidade.html">Política de Privacidade</a></li></ul></div></div><div class="wrap bottom"><p>Internet Fácil Br - Soluções tecnológicas acessíveis para todos</p><p>&copy; 2026 Internet Fácil Br. Todos os direitos reservados.</p></div></footer>
+  <footer class="foot"><div class="wrap fgrid"><div><h3>Sobre</h3><ul><li><a href="/sobre.html">Sobre Nós</a></li></ul></div><div><h3>Contato</h3><ul><li><a href="/contato.html">Fale Conosco</a></li></ul></div><div><h3>Legal</h3><ul><li><a href="/privacidade.html">Política de Privacidade</a></li><li><a href="/termos.html">Termos de Uso</a></li></ul></div></div><div class="wrap bottom"><p>Conteúdo por equipe Internet Fácil Br · Última atualização: Junho 2026</p><p>Internet Fácil Br - Soluções tecnológicas acessíveis para todos</p><p>&copy; 2026 Internet Fácil Br. Todos os direitos reservados.</p></div></footer>
 
   <script>
     const q=s=>document.querySelector(s),qa=s=>document.querySelectorAll(s);
